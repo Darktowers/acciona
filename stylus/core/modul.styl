@@ -1,0 +1,387 @@
+@font-face 
+    font-family: 'jennasue';
+    src: url('../fonts/jennasue-webfont.woff2') format('woff2'),
+         url('../fonts/jennasue-webfont.woff') format('woff'),
+         url('../fonts/jennasue.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+@font-face
+    font-family: 'asap-bold';
+    src: url('../fonts/asap-bold-webfont.woff.woff2') format('woff2'),
+         url('../fonts/asap-bold-webfont.woff.woff') format('woff'),
+         url('../fonts/asap-bold.ttf') format('truetype')
+    font-weight: bold;
+    font-style: normal;
+@font-face
+    font-family: 'asap-regular';
+    src: url('../fonts/asap-regular-webfont.woff2') format('woff2'),
+         url('../fonts/asap-regular-webfont.woff') format('woff'),
+         url('../fonts/asap-regular.ttf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+@import "nib"
+@import "nib/vendor"
+body
+    font-family: asap-regular
+.header
+    .preheaderx
+        background: #e6e7e9
+        color: #414141
+        &-Container
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            height: 48px;
+            &-Search
+                width: 60%;
+                height: inherit;
+                display: flex;
+                align-items: center;
+                form
+                    height: inherit;
+                    display: flex;
+                    width: 100%;
+                    input[type=text]
+                        width: 92%;
+                        border: 0;
+                        background: #e6e7e9;
+                        font-size: 1.5em;
+                        padding: 0 .5em;
+                        outline: 0;
+                        color: #949597;
+                    button
+                        width: 8%;
+                        border: 0;
+                        background: #949597;
+                        span
+                            color: #e6e7e9;
+                            font-size: 1.1em
+            &-Menu
+                height: inherit;
+                display: flex;
+                align-items: center;
+                padding: 0 .5em;
+                width: 27%;
+                justify-content: center;
+                .semilink
+                    padding: .5em 1em;
+                    border-right: 1px solid #949597;
+                    font-weight: bold
+                    &:last-child
+                        border 0
+            &-Interactions
+                height: inherit;
+                display: flex;
+                align-items: center;
+                .interaction
+                    width: 48px;
+                    background: #949597;
+                    height: inherit;
+                    margin-right: 1px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    color: #d0d1d3;
+                    &:first-child
+                        background: #e42520;
+                        color: white;
+                    img
+                        width: 16px;
+    .preheader
+        background: black;
+        color: white;
+    &-Container
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        height: 48px;
+        .semilink
+            padding: .5em 1em;
+            border-right: 1px solid;
+            display: table;
+            &:last-child
+                border: 0
+        &-Navigation
+            display: flex;
+            border-right: 1px solid;
+            align-items: center;
+            height: inherit;
+            padding-right: 1em;
+            color: #cdcdcd;
+        &-UserName
+            width: 52%;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            padding-left: 1.5em;
+            border-right: 1px solid #cdcdcd;
+            p
+                color: #808080;
+        &-ActualTime
+            display: flex;
+            align-items: center;
+            height: inherit;
+            padding-left: 1.5em;
+            border-right: 1px solid #cdcdcd;
+            padding-right: .5em;
+            .time
+                border-right: 1px solid #cdcdcd;
+                padding: 0 1em 0 0;
+                flex-direction: column;
+                p
+                    margin: 0;
+            .sun
+                padding: 0 .5em 0 1em;
+                img
+                    width: 25px;
+        &-Questions
+            display: flex;
+            width: 70%;
+            height: inherit;
+            align-items: center;
+            padding: 0 1em;
+            border-right: 1px solid #cdcdcd;
+            justify-content: space-around;
+            font-size: 10px;
+            color: #cdcdcd;
+        &-Message
+            width: 36%;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .message
+                font-family: jennasue;
+                font-size: 20px;
+                margin: 0;
+                text-align: right;
+                line-height: 0.8;
+.t_red
+    color: #e42520;
+.time
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em 0 0 .5em;
+    .col
+        margin: 0
+    .col1
+        width: 30%;
+        .title
+            h1
+                font-size: 2.5em;
+                margin: 0;
+                padding: 0 0 .5em 0;
+                border-bottom: 2px solid #e42520;
+        .subtitle
+            padding: 1em 0;
+            border-bottom: 1px solid #ccc;
+            h2
+                font-size: 24px;
+                margin: 0;
+                color: #e42520;
+        .timecity
+            border-bottom: 1px solid #ccc;
+            p
+                color: #e42520;
+                font-weight: bold;
+            form
+                display: flex;
+                justify-content: space-between;
+                input[type=text]
+                    border: 0;
+                    outline: none;
+                    padding: 1.1em;
+                    padding-left: 0;
+                    width: 90%
+                    font-size: 14px
+                button
+                    border: 0;
+                    background: white;
+                    span
+                        color #ccc
+        .block
+            border-bottom: 1px solid #ccc;
+            &:last-child
+                border: 0
+        .timein
+            p
+                color: #e42520;
+                font-weight: bold;
+                margin-bottom: 0;
+            .links
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                ul
+                    padding: 0;
+                    list-style: none;
+                    width: 40%;
+                    li
+                        padding: .5em 0;
+                        border-bottom: 1px solid #ccc;
+                        font-weight: bold;
+                        &:last-child
+                            border: 0
+        .timeinroute
+        .trafic
+            padding: 1em 0;
+            p
+                color: #e42520;
+                font-weight: bold;
+                margin: 0;
+                
+    .col2
+        width: 70%;
+        padding: 0 0 0 1em;
+        .menu
+            font-size: 12px;
+            padding: 2em 0 2.5em 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+            border-bottom: 2px solid #ccc;
+            .item
+                font-weight: bold;
+        .map
+            overflow: hidden
+            img
+                width: 100%;
+                transform: scale(1.10);
+.hidden
+    display: none;
+.weather
+    .footer
+        display: flex;
+        justify-content: space-between;
+        padding: .5em 0;
+        .link
+            font-weight: bold;
+            a
+                display: flex;
+                align-items: center;
+                i
+                    color #e42520
+                    font-size: 1.8em
+                    margin-left: .5em
+            
+    .header
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #949597;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        .t_red
+            padding-right: 4em;
+        .fa-times
+            cursor: pointer
+    &-Container
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: .5em;
+
+        .clouds
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            padding: 2em 0;
+            color: #949597;
+            .cloud
+                width: 16%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-width: 100px;
+                flex-wrap: wrap
+                p
+                    font-size: 12px;
+                    text-align: center
+        .col
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-size: 12px;
+            align-items: center;
+            width: 22%;
+            padding: 0 .5em;
+            border-right: 1px solid #ccc;
+            margin-top: .5em;
+            &:last-child
+                border: 0
+            h6
+                text-align: center;
+                margin: 0;
+                margin-bottom: 1em;
+            .insights
+                width: 100%;
+                padding: 1em 0;
+                border-bottom: 1px solid #ccc;
+                &:last-child
+                    border: 0
+                p
+                    text-align: center;
+                    margin: 0;
+                .prediction
+                    .grades
+                        font-weight: bold;
+                        font-size: 2em;
+                .temperature
+                    font-weight: bold
+                    .max
+                        color:#e42520;     
+                    .min
+                        color #949597;
+                .rain
+                    color black
+                    font-weight: bold
+                .prediction
+                .temperature
+                .rain
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center
+        .first
+            font-size: 12px;
+            width: 15%;
+            color: #949597;
+
+@media (max-width:890px)
+    .time
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 0 2em;
+        .col
+            width: 70% !important
+            padding: 0 !important
+        .col2 
+            .menu
+                flex-wrap: wrap
+@media (max-width:835px)
+    .time
+        .col
+            width: 80% !important
+@media (max-width:680px)
+    .weather
+        &-Container
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+@media (max-width:475px)
+    .time
+        .col
+            width: 100% !important
+
+
+
+
+
+            
